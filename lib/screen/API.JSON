@@ -1,0 +1,292 @@
+{
+    "info": {
+      "_postman_id": "1667dcbd-0fc8-4a65-8d8e-8050f0652435",
+      "name": "trpl_api",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "_exporter_id": "3140692"
+    },
+    "item": [
+      {
+        "name": "customer-service-api",
+        "item": [
+          {
+            "name": "customer-service",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  ""
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "customer-service/:nim",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/2215091068",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  "2215091068"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "customer-service/:nim/:id",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/2215091068/1",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  "2215091068",
+                  "1"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "customer-service/:nim",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+                  {
+                    "key": "title_issues",
+                    "value": "Issuse for department",
+                    "type": "text"
+                  },
+                  {
+                    "key": "description_issues",
+                    "value": "Description issues for department",
+                    "type": "text"
+                  },
+                  {
+                    "key": "rating",
+                    "value": "4",
+                    "type": "text"
+                  },
+                  {
+                    "key": "image",
+                    "type": "file",
+                    "src": "/Users/pagedev/Downloads/money-flat.png"
+                  },
+                  {
+                    "key": "id_division_target",
+                    "value": "2",
+                    "type": "text"
+                  },
+                  {
+                    "key": "id_priority",
+                    "value": "3",
+                    "type": "text"
+                  }
+                ]
+              },
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/2215091068",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  "2215091068"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "customer-service/:nim/:id",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+                  {
+                    "key": "title_issues",
+                    "value": "Test update issues department",
+                    "type": "text"
+                  },
+                  {
+                    "key": "description_issues",
+                    "value": "test description issues update",
+                    "type": "text"
+                  },
+                  {
+                    "key": "rating",
+                    "value": "4",
+                    "type": "text"
+                  },
+                  {
+                    "key": "image",
+                    "type": "file",
+                    "src": [],
+                    "disabled": true
+                  },
+                  {
+                    "key": "id_division_target",
+                    "value": "1",
+                    "type": "text"
+                  },
+                  {
+                    "key": "id_priority",
+                    "value": "2",
+                    "type": "text"
+                  }
+                ]
+              },
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/2215091068/236",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  "2215091068",
+                  "236"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "customer-service/:nim/:id",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/trpl/customer-service/2215091068/236",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "trpl",
+                  "customer-service",
+                  "2215091068",
+                  "236"
+                ]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "division-department-api",
+        "item": [
+          {
+            "name": "division-department",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/division-department",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "division-department"
+                ]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "priority-issues-api",
+        "item": [
+          {
+            "name": "priority-issues",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{lumen_public}}/api/priority-issues",
+                "host": [
+                  "{{lumen_public}}"
+                ],
+                "path": [
+                  "api",
+                  "priority-issues"
+                ]
+              }
+            },
+            "response": []
+          }
+        ]
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "type": "text/javascript",
+          "packages": {
+  
+          },
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "packages": {
+  
+          },
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "key": "lumen_local",
+        "value": "http://127.0.0.1:8000"
+      },
+      {
+        "key": "lumen_public",
+        "value": "https://simobile.singapoly.com",
+        "type": "string"
+      }
+    ]
+  }
